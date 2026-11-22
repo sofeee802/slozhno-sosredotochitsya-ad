@@ -120,14 +120,14 @@
 .header__title {
     position: absolute;
     inset-block: 0;
-    inset-inline-start: 0;
+    inset-inline-start: var(--title-inset);
     block-size: fit-content;
     max-inline-size: 100%;
     margin-block: auto;
     color: var(--title-color);
     font-size: var(--title-font-size);
     font-weight: bold;
-    line-height: 1;
+    line-height: 0.83;
     overflow-wrap: anywhere;
     text-shadow: 4px 4px 0 var(--accent-color);
 }
@@ -143,7 +143,7 @@
 .content {
     display: grid;
     gap: var(--section-gap);
-    padding: var(--section-gap) var(--page-padding);
+    padding: var(--content-padding-top) var(--page-padding) var(--section-gap);
 }
 
 .section {
