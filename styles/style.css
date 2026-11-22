@@ -73,7 +73,7 @@
 }
 
 .header__theme-menu-button {
-    padding: 4px 8px;
+    padding: 4px 12px;
     border: 1px solid transparent;
     border-radius: 0;
     background-color: transparent;
@@ -118,8 +118,12 @@
     }
 
 .header__title {
-    align-self: center;
-    justify-self: start;
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 0;
+    block-size: fit-content;
+    max-inline-size: 100%;
+    margin-block: auto;
     color: var(--title-color);
     font-size: var(--title-font-size);
     font-weight: bold;
@@ -129,7 +133,9 @@
 }
 
 .header__subtitle {
+    grid-row: 3;
     align-self: end;
+    font-weight: bold;
 }
 
 /* ---------- Основной контент ---------- */

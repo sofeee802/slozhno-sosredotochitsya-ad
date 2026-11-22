@@ -18,7 +18,7 @@
     --menu-color: #353430;
     --line-color: #353430;
     --hover-border-color: rgba(53, 52, 48, 0.5);
-    --page-background-color: #fcf1f8;
+    --page-background-color: #fff1fa;
     --page-background-image: url('../images/cover-image-light.png');
     --rec-display: none;
 }
@@ -34,7 +34,7 @@
         --menu-color: #353430;
         --line-color: #353430;
         --hover-border-color: rgba(53, 52, 48, 0.5);
-        --page-background-color: #fcf1f8;
+        --page-background-color: #fff1fa;
         --page-background-image: url('../images/cover-image-light.png');
         --rec-display: none;
     }

@@ -15,11 +15,11 @@
     --heading-color: #ff0070;
     --accent-color: #ff0070;
     --decor-text-color: #000028;
-    --title-color: #bf75f5;
+    --title-color: #dc00ff;
     --menu-color: #ff0070;
     --line-color: #ff0070;
     --hover-border-color: rgba(255, 0, 112, 0.5);
-    --page-background-color: #0b1140;
+    --page-background-color: #010028;
     --page-background-image: url('../images/cover-image-dark.png');
     --rec-display: block;
 }
