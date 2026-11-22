@@ -1,55 +1,96 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+</article >
+<article class="card" >
+<h3 class="card__title card__title_style_regular title-decor" >
+Включите музыку
+</h3 >
+<p class="card__text" >
+Но не любую, и не любимую. Любимая может быть связана с сильными
+положительными эмоциями, которые тоже очень сильно отвлекают.
+Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
+попробовать включить плейлист с «белым шумом» или нейромузыкой.
+</p >
+</article >
+<article class="card" >
+<h3 class="card__title card__title_style_regular title-decor" >
+Прогуляйтесь
+</h3 >
+<p class="card__text" >
+Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
+<a
+class="card__link"
+href="https://pubmed.ncbi.nlm.nih.gov/19121124/"
+target="_blank"
+rel="noopener noreferrer" > показал</a >, что созерцание природы повышает концентрацию, в то время как
+после просмотра городских пейзажей она наоборот понижается. Можно
+совместить прогулку с физическими упражнениями или бегом — так в
+мозг поступит ещё больше кислорода и он будет лучше работать. Но и
+простая двадцатиминутная прогулка — тоже отличный вариант.
+</p >
+</article >
+<article class="card" >
+<h3 class="card__title card__title_style_regular title-decor" >
+Хорошо ешьте
+</h3 >
+<p class="card__text" >
+Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
+которые препятствуют резким скачкам сахара в крови. Например, с
+высоким содержанием клетчатки: овощи, ягоды, бобовые (нут,
+              чечевица, фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
+</p >
+</article >
+<article class="card" >
+<h3 class="card__title card__title_style_regular title-decor" >
+Читайте
+</h3 >
+<p class="card__text" >
+Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
+прочитать пост в соцсети, достаточно нескольких минут или даже
+секунд. А вот интересная книга способна затянуть и на несколько
+часов и круто тренирует направленное внимание.
+</p >
+</article >
+</div >
+</section >
 
-/* Основная тема — тёмная («Неон»). Мобильные значения — по умолчанию */
-:root {
-    /* Шрифт и размеры текста */
-    --font-family: 'IBM Plex Mono', monospace;
-    --font-size-base: 1.125rem;
-    --line-height-base: 1.33;
-    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    /* Цвета тёмной темы */
-    --text-color: #f1b2ce;
-    --heading-color: #ff0070;
-    --accent-color: #ff0070;
-    --decor-text-color: #000028;
-    --title-color: #bf75f5;
-    --menu-color: #ff0070;
-    --line-color: #ff0070;
-    --hover-border-color: rgba(255, 0, 112, 0.5);
-    --page-background-color: #0b1140;
-    --page-background-image: url('../images/cover-image-dark.png');
-    /* Декоративная надпись REC: в тёмной теме видна */
-    --rec-display: block;
-    /* Отступы */
-    --page-padding: 10px;
-    --section-gap: 48px;
-    --block-gap: 20px;
-    --gallery-gap: 10px;
-    /* Шапка и подвал: высота окна, но не меньше значения из макета */
-    --screen-min-height: 668px;
-    --header-padding-bottom: 60px;
-    --menu-offset: 72px;
-}
+<section class="section section_type_gallery" >
+<h2 class="gallery__title title-decor" > А можно в картинках?</h2 >
+<div class="gallery" >
+<img
+class="gallery__image gallery__image_subject_sunset"
+src="./images/sunset.png"
+alt="Розово-фиолетовый закат над морем и горами, в небе летят птицы"
+loading="lazy"
+/ >
+<img
+class="gallery__image gallery__image_subject_ice-cream"
+src="./images/ice-cream.png"
+alt="Милый десерт-мороженое с кошачьими мордочками в жёлтой вазочке со звёздами"
+loading="lazy"
+/ >
+<img
+class="gallery__image gallery__image_subject_tape"
+src="./images/tape.png"
+alt="Ретро-кассета и окна старой компьютерной программы на фиолетовом фоне"
+loading="lazy"
+/ >
+<img
+class="gallery__image gallery__image_subject_books"
+src="./images/books.png"
+alt="Высокая стопка книг, на верхней стоит чашка с надписью Read more"
+loading="lazy"
+/ >
+<img
+class="gallery__image gallery__image_subject_street"
+src="./images/street.png"
+alt="Тихая японская улочка в розовых закатных тонах"
+loading="lazy"
+/ >
+</div >
+</section >
+</main >
 
-@media (min-width: 768px) {
-    :root {
-        --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-        --page-padding: 20px;
-        --section-gap: 72px;
-        --gallery-gap: 20px;
-        --screen-min-height: 1024px;
-        --header-padding-bottom: 200px;
-        --menu-offset: 180px;
-    }
-}
-
-@media (min-width: 1024px) {
-    :root {
-        --screen-min-height: 768px;
-        --header-padding-bottom: 144px;
-        --menu-offset: 0px;
-    }
-}
+<footer class="footer decorated-zone" >
+<h2 class="footer__title" lang="en" > focus</h2 >
+</footer >
+</body >
+</html >
