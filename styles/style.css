@@ -56,7 +56,6 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     block-size: 100vh;
-    block-size: 100svh;
     min-block-size: var(--screen-min-height);
     padding: 20px var(--page-padding) var(--header-padding-bottom);
 }
@@ -232,7 +231,6 @@
     display: grid;
     place-items: center;
     block-size: 100vh;
-    block-size: 100svh;
     min-block-size: var(--screen-min-height);
     padding: 40px var(--page-padding);
 }
