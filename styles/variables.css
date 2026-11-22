@@ -2,3 +2,54 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+/* Основная тема — тёмная («Неон»). Мобильные значения — по умолчанию */
+:root {
+    /* Шрифт и размеры текста */
+    --font-family: 'IBM Plex Mono', monospace;
+    --font-size-base: 1.125rem;
+    --line-height-base: 1.33;
+    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    /* Цвета тёмной темы */
+    --text-color: #f1b2ce;
+    --heading-color: #ff0070;
+    --accent-color: #ff0070;
+    --decor-text-color: #000028;
+    --title-color: #bf75f5;
+    --menu-color: #ff0070;
+    --line-color: #ff0070;
+    --hover-border-color: rgba(255, 0, 112, 0.5);
+    --page-background-color: #0b1140;
+    --page-background-image: url('../images/cover-image-dark.png');
+    /* Декоративная надпись REC: в тёмной теме видна */
+    --rec-display: block;
+    /* Отступы */
+    --page-padding: 10px;
+    --section-gap: 48px;
+    --block-gap: 20px;
+    --gallery-gap: 10px;
+    /* Шапка и подвал: высота окна, но не меньше значения из макета */
+    --screen-min-height: 668px;
+    --header-padding-bottom: 60px;
+    --menu-offset: 72px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+        --page-padding: 20px;
+        --section-gap: 72px;
+        --gallery-gap: 20px;
+        --screen-min-height: 1024px;
+        --header-padding-bottom: 200px;
+        --menu-offset: 180px;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --screen-min-height: 768px;
+        --header-padding-bottom: 144px;
+        --menu-offset: 0px;
+    }
+}
